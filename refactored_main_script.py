@@ -1,15 +1,14 @@
 # Importing classes from file
-from refactored_weather_forecast_classes import CityWeatherData
+from classes2 import WeatherDataFetcher, DataParser, UserInterface
 
 # Main script
 def main():
-    weather = CityWeatherData()
     while True:
-        option = input("Options:\n1. Get Weather Details\n2. Exit\nSelect Option(1 or 2): ")
-        if option == "2":
+        action = input("Actions:\n1. Get Weather Details\n2. Exit\nSelect Option(1 or 2): ")
+        if action == "2":
             break
-        elif option == "1":
-            weather.parse_weather_data()
+        elif action == "1":
+            UserInterface()
         else:
             print("Invalid option. Please select '1' or '2'.")
 

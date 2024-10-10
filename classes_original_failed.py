@@ -1,5 +1,4 @@
-
-# This is part of the refactored code, this section is used to define the class and functions.
+# This is the code I used in the class file when I turned in the assignment:
 
 # Create a class to hold City Weather Data
 class CityWeatherData:
@@ -32,6 +31,3 @@ class CityWeatherData:
                 raise ValueError
         except ValueError:
             print(f"Weather not found for {requested_city}.")
-
-
-
